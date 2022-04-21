@@ -1,0 +1,15 @@
+platform: "tensorrt_plan"
+max_batch_size: 32
+input [
+ {
+    name: "actual_input_1"
+    data_type: TYPE_FP32
+    format: FORMAT_NCHW
+    dims: [ 3, 224, 224 ]
+  }
+]
+output {
+    name: "output_1"
+    data_type: TYPE_FP32
+    dims: [ 1000 ]
+  }
